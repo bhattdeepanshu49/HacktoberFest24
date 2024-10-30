@@ -1,6 +1,11 @@
 import React from "react"
 import "./Home.css"
 const Home = () => {
+    const inputRefs = useRef([])
+    const targetWord = "fuffy"
+    const targetWordArr = targetWord.split("")
+
+    const [numberOfLetters, setNumberOfLetters] = useState(5)
     const wordSet = {
         5: "board",
         6: "kousik",
