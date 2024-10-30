@@ -81,6 +81,12 @@ const Home = () => {
             inputRefs.current[rowUnlocked][0].focus()
             setrowUnlocked((prev) => prev + 1)
         }
+
+        setTimeout(() => {
+            if (JSON.stringify(userInput) == JSON.stringify(targetWordArr)) {
+                alert("Success. You found the word")
+            }
+        }, 500)
     }
     return (
         <div className="Home">
